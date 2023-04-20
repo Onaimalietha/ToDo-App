@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+
+        <title>ToDo App</title>
+    </head>
+    <body>
+        <div id = "mainBox">
+            <h1>ToDo's</h1>
+            <div id = "sharedText">
+                shared with 0 person
+            </div>
+
+            <div class = "options">
+                <a  href = "#moreOptions">
+                    <button>
+                        ...
+                    </button>
+                </a>
+            </div>
+
+            <div id = "moreOptions" class = "modal">
+                <div class = "optionsContent">
+                    <b>
+                        <div class = "addTodo">
+                            <a href = "#addingTodo">
+                                <button class = "addBtn">
+                                    Add ToDo
+                                </button>
+                            </a>
+                        </div>
+                    </b>
+                    <a href="#" class="box-close">
+                        <div>Close</div>
+                    </a>        
+                </div>
+            </div>
+
+            <div id = "addingTodo" class = "todoIn">
+                <div class = "addContent">
+                    <b>
+                        <label> Input Todo</label>
+                        <br>
+                        <input type = "text">
+                        <a href="#" class="box-close">
+                            <div>Close</div>
+                        </a>  
+                    </b>
+                </div>
+            </div>
+
+            <div id="checkboxes">
+                <ul>
+                  <li><input type="checkbox"> checkbox 1</li>
+                  <li><input type="checkbox"> checkbox 2</li>
+                  <li><input type="checkbox"> checkbox 3</li>
+                  <li><input type="checkbox"> checkbox 4</li>
+                </ul>
+            </div>
+
+            <h3 id = "completedHeader">
+                Completed
+            </h3>
+
+            <div id="checkboxes">
+                <ul>
+                  <li><input type="checkbox"> checkbox 1</li>
+                  <li><input type="checkbox"> checkbox 2</li>
+                  <li><input type="checkbox"> checkbox 3</li>
+                  <li><input type="checkbox"> checkbox 4</li>
+                </ul>
+            </div>
+
+        </div>
+    </body>
+
+</html>
