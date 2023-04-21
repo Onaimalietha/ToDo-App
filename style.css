@@ -13,6 +13,7 @@ body{
 
 #mainBox{
     margin-top: 2.5rem;
+    position: absolute;
 
     background-color: #EEF2FB;
 
@@ -33,16 +34,28 @@ body{
 h1{
     font-size: 50px;
     color: #37375f;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
 }
 
 #sharedText{
     font-size: 14px;
     color: #9C9CB4;
-    margin-bottom: 4rem ;
+    margin-bottom: 1rem;
 }
 
-button{
+#optionsBox{
+    background-color: #EEF2FB;
+    position:absolute;
+    top: 2rem;
+    left: 22rem;
+
+    width: 5.5rem;
+    height: 5.5rem;
+
+    justify-content: center;
+}
+
+#optionsBtn{
     font-size: 4rem;
     font-family: 'Times New Roman', Times, serif;
 
@@ -53,9 +66,10 @@ button{
 }
 
 .options{
-    margin-top: -10rem;
     display: flex;
     float: right;
+
+    margin-left: 20rem;
 
     color: #9494AC;
 
@@ -71,8 +85,6 @@ button{
 
 .modal{
     float: right;
-    margin-right: 6rem;
-    margin-top: -5rem;
 
     transition: all 0.4s;
 
@@ -83,14 +95,17 @@ button{
 }
 
 .optionsContent{
-    position: absolute;
+    position: relative;
+    left: 1.5rem;
     background-color: #EEF2FB;
-    padding: 1rem;
+    padding: 0.5rem;
 
     border-style:outset;
     border: 4px solid;
     border-color: #AAAAC4;
     border-radius: 15px;
+
+    width: 6rem;
     
 }
 
@@ -105,6 +120,7 @@ button{
     text-align: center;
     background-color: #EEF2FB;
     color: #37375f;
+    border: none;
 }
 
 .box-close{
@@ -117,8 +133,6 @@ button{
 
 .todoIn{
     float: right;
-    margin-right: 6rem;
-    margin-top: -5rem;
 
     transition: all 0.4s;
     visibility:hidden;
@@ -146,15 +160,38 @@ button{
     opacity: 1;
 }
 
+#input{
+    font-size: 2.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;   
+    text-align: center;
+}
+
+.checkbox-round{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: #9C9CB4;
+}
 
 #checkboxes ul {
-    margin: -2.8rem;
     list-style: none;
     float: left;
 }
 
 #completedHeader{
-    margin-top: 6rem;
+    font-size: 16px;
+    color: #7d7da0;
+    margin-bottom:1px;
 }
 
 

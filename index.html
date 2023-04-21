@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="style.css">
-        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/f78af3e9c0.js" crossorigin="anonymous"></script>
 
         <title>ToDo App</title>
     </head>
@@ -17,67 +17,67 @@
                 shared with 0 person
             </div>
 
-            <div class = "options">
-                <a  href = "#moreOptions">
-                    <button>
-                        ...
+            <div id = "optionsBox">
+                <div class = "options">
+                    <a  href = "#moreOptions">
+                        <button id = "optionsBtn">
+                            ...
+                        </button>
+                    </a>
+                </div>
+    
+                <div id = "moreOptions" class = "modal">
+                    <div class = "optionsContent">
+                        <a href="#" class="box-close">
+                            <div>Close</div>
+                        </a>        
+                    </div>
+                </div>
+            </div>
+
+            <div class = "addTodo">
+                <a href = "#todoIn">
+                    <button class = "addBtn">
+                        +
                     </button>
                 </a>
             </div>
 
-            <div id = "moreOptions" class = "modal">
-                <div class = "optionsContent">
-                    <b>
-                        <div class = "addTodo">
-                            <a href = "#addingTodo">
-                                <button class = "addBtn">
-                                    Add ToDo
-                                </button>
-                            </a>
-                        </div>
-                    </b>
-                    <a href="#" class="box-close">
-                        <div>Close</div>
-                    </a>        
-                </div>
-            </div>
-
-            <div id = "addingTodo" class = "todoIn">
+            <div id = "todoIn" class = "todoIn">
                 <div class = "addContent">
-                    <b>
-                        <label> Input Todo</label>
-                        <br>
-                        <input type = "text">
+                        <form id = "form">
+                            <input type="text" class = "input" id="input" placeholder="Enter new toDo" autocomplete="off"/>
+                        </form>
+                        
                         <a href="#" class="box-close">
                             <div>Close</div>
                         </a>  
-                    </b>
                 </div>
             </div>
 
             <div id="checkboxes">
-                <ul>
-                  <li><input type="checkbox"> checkbox 1</li>
-                  <li><input type="checkbox"> checkbox 2</li>
-                  <li><input type="checkbox"> checkbox 3</li>
-                  <li><input type="checkbox"> checkbox 4</li>
+                <ul class = "todos" id = "newTodos">
+                  <li><input type="checkbox" class = "checkbox-round"> checkbox 1</li>
+                  <li><input type="checkbox" class = "checkbox-round"> checkbox 2</li>
+                  <li><input type="checkbox" class = "checkbox-round"> checkbox 3</li>
+                  <li><input type="checkbox" class = "checkbox-round"> checkbox 4</li>
                 </ul>
             </div>
 
             <h3 id = "completedHeader">
-                Completed
+                COMPLETED
             </h3>
 
             <div id="checkboxes">
-                <ul>
-                  <li><input type="checkbox"> checkbox 1</li>
-                  <li><input type="checkbox"> checkbox 2</li>
-                  <li><input type="checkbox"> checkbox 3</li>
-                  <li><input type="checkbox"> checkbox 4</li>
+                <ul class = "dones" id = "oldTodos">
+                  <li><input type="checkbox" class = "checkbox-round"> checkbox 1</li>
+                  <li><input type="checkbox" class = "checkbox-round"> checkbox 2</li>
+                  <li><input type="checkbox" class = "checkbox-round"> checkbox 3</li>
+                  <li><input type="checkbox" class = "checkbox-round"> checkbox 4</li>
                 </ul>
             </div>
 
         </div>
     </body>
-
+    <script src="index.js"></script>
 </html>
