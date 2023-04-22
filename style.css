@@ -13,7 +13,7 @@ body{
 
 #mainBox{
     margin-top: 2.5rem;
-    position: absolute;
+    position: relative;
 
     background-color: #EEF2FB;
 
